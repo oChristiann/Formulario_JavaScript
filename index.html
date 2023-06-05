@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> Formulário </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/validacao.js"></script>
+</head>
+
+<body>
+    <h1> Formulário de Solicitação de Mobilidade Acadêmica Virtual Discente </h1>
+    <br>
+
+    <div id="main">
+        <form action="">
+
+            <div class="f_line">
+                <span>
+                    <label> *Nome completo: </label>
+                    <input type="text" id="i_name" required>
+                </span>
+            </div>
+
+            <div class="f_line">
+                <span>
+                    <label> *Data de nascimento: </label>
+                    <input type="date" id="i_data" required>
+                </span>
+            </div>
+
+            <div class="f_line">
+                <span>
+                    <label> *CPF: </label>
+                    <input type="text" id="i_cpf" required>
+                </span>
+            </div>
+
+            <div class="f_line">
+                <span>
+                    <label> *Email: </label>
+                    <input type="email" id="i_email" required>
+                </span>
+            </div>
+
+            <div class="f_line">
+                <span>
+                    <label> *Senha: </label>
+                    <input type="password" id="i_password" required>
+                </span>
+            </div>
+
+            <div class="f_line">
+                <span>
+                    <label> *Confirme a senha: </label>
+                    <input type="password" id="i_confpassword" required>
+                </span>
+            </div>
+
+            <div class="f_line">
+                <span>
+                    <label> *Situação de trabalho: </label>
+                    <select name="job" id="i_job" required>
+                        <option value=""> Está buscando emprego? </option>
+                        <option value="yes"> Sim </option>
+                        <option value="no"> Não </option>
+                    </select>
+                </span>
+            </div>
+
+            <div class="f_line">
+                <span>
+                    <label> Comentários e menções: </label>
+                    <input type="text" id="i_text">
+                </span>
+            </div>
+
+            <div class="f_line">
+                <span>
+                    <label> Conte sobre sua experiência profissional, caso possua: </label>
+                    <input type="text" id="message">
+                    <br> <br>
+                    <input id="btt_form" type="submit" onclick="validacao()" value="Salvar">
+                </span>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
